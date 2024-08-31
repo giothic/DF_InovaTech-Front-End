@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #191d2b;
-  --color-secondary: #a42a15;
+  --color-secondary: #9f15a4;
   --color-white: #FFFFFF;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -23,7 +23,7 @@
 
 .light-mode {
   --color-primary: #FFFFFF;
-  --color-secondary: #240749;
+  --color-secondary: #9f15a4;
   --color-white: #454e56;
   --color-black: #000;
   --color-grey0: #f8f8f8;
@@ -113,7 +113,7 @@ section {
 }
 .controls .control i {
   font-size: 1.2rem;
-  color: var(--color-grey-2);
+  color: var(--color-grey0);
   pointer-events: none;
 }
 .controls .active-btn {
@@ -144,7 +144,7 @@ section {
 }
 .theme-btn i {
   font-size: 1.4rem;
-  color: var(--color-grey-2);
+  color: var(--color-grey0);
   pointer-events: none;
 }
 
@@ -311,22 +311,22 @@ section {
   width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 95%;
+  width: 25%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 95%;
+  width: 30%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 78%;
+  width: 5%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .photoshop {
-  width: 97%;
+  width: 77%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .uxui {
   width: 15%;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 50%;
+.about-stats .progress-bars .progress-bar .progress-con .progress .java {
+  width: 55%;
 }
 
 .stat-title {
@@ -635,6 +635,7 @@ section {
 .main-btn {
   border-radius: 30px;
   color: inherit;
+  background-color: #bd3ac2;
   font-weight: 600;
   position: relative;
   border: 1px solid var(--color-secondary);
@@ -645,6 +646,7 @@ section {
 }
 .main-btn .btn-text {
   padding: 0 2rem;
+  color: #191d2b;
 }
 .main-btn .btn-icon {
   background-color: var(--color-secondary);
