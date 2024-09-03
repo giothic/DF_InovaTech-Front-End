@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f4f4; /* Cor de fundo suave para a página */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    color: #4a148c; /* Tom de roxo escuro para o título */
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    border-collapse: collapse; /* Remove espaçamento entre bordas */
+    background: #ffffff; /* Fundo branco para a tabela */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+thead {
+    background-color: #6a1b9a; /* Tom de roxo para o cabeçalho */
+    color: #ffffff; /* Cor do texto do cabeçalho */
+}
+
+th, td {
+    border: 1px solid #e1bee7; /* Bordas sutis em tom claro de roxo */
+    padding: 12px; /* Espaçamento interno das células */
+    text-align: left; /* Alinhamento do texto */
+}
+
+tr:nth-child(even) {
+    background-color: #f3e5f5; /* Cor de fundo suave em tom roxo claro para linhas pares */
+}
+
+tr:hover {
+    background-color: #d1c4e9; /* Efeito hover em tom roxo mais escuro */
+}
+
+th {
+    font-weight: bold; /* Destaque para o texto do cabeçalho */
+}
