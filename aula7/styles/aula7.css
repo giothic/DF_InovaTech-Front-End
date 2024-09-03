@@ -1,0 +1,69 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e9ecef; /* Tom neutro claro para o fundo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background: #ffffff; /* Fundo branco para o container */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #343a40; /* Cor escura para o texto do título */
+}
+
+.animal-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.animal {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: center;
+    margin-bottom: 30px; /* Aumentado para criar mais espaço entre os blocos */
+    flex: 1 1 250px; /* Ajustado para permitir mais espaço */
+    max-width: 100%;
+    text-align: center;
+    padding: 15px; /* Espaçamento interno */
+    background: #f8f9fa; /* Cor de fundo clara para os blocos */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+}
+
+.animal img {
+    width: 100%;
+    max-width: 250px; /* Reduzido para se ajustar melhor ao novo tamanho */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 15px; /* Espaçamento aumentado entre a imagem e o texto */
+}
+
+.animal img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.animal p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    margin: 0;
+    color: #495057; /* Cor do texto para melhor legibilidade */
+}
