@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituição de Ensino</title>
+    <!-- Favicon -->
+    <link rel="icon" href="/aula9/img/logo.png" type="image/x-icon">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="/aula9/css/style.css">
+</head>
+
+<body>
+    <!-- Menu de Cabeçalho -->
+    <header>
+        <div class="logo">
+            <img src="/aula9/img/logo.png" alt="Logo da Instituição" width="50" weight="auto">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#cursos">Cursos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Principal -->
+    <main class="container">
+        <section id="home">
+            <h1>Bem-vindo à Instituição de Ensino</h1>
+            <p>Nossa missão é fornecer educação de qualidade para todos.</p>
+            <img src="/aula9/img/escola.jpg" alt="Imagem da Instituição">
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Estamos comprometidos em oferecer os melhores recursos e tecnologias para nossos alunos.</p><br></br>
+
+            <p>Na Bird, acreditamos que o conhecimento é a chave para alçar voo e alcançar novas alturas. O nome Bird
+                simboliza nossa missão de elevar o potencial dos nossos alunos, proporcionando uma visão ampla e clara
+                do mundo da tecnologia. Assim como um pássaro que explora novos horizontes, nossos cursos são projetados
+                para abrir caminhos e criar oportunidades no universo digital.
+
+                Oferecemos uma gama de cursos inovadores em áreas como programação, desenvolvimento web, inteligência
+                artificial e cibersegurança, com o objetivo de equipar você com as habilidades essenciais para se
+                destacar em um mercado em constante evolução. Nossa equipe de especialistas é apaixonada por transformar
+                aprendizado em experiência prática, garantindo que você esteja pronto para enfrentar os desafios e
+                abraçar as oportunidades da era tecnológica.
+
+                Venha voar alto conosco e descubra como a Bird pode ajudar você a alcançar novas alturas em sua
+                carreira!
+            </p>
+        </section>
+
+        <section id="cursos">
+            <h2>Nossos Cursos</h2>
+            <p>Oferecemos uma variedade de cursos nas áreas de tecnologia, ciência, e artes.</p>
+            
+            <!-- Video do YouTube -->
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/EXEMPLO" title="YouTube video"
+                    allowfullscreen></iframe>
+            </div>
+            
+            <!-- Áudio -->
+            <audio controls>
+                <source src="audio.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            
+            <!-- Tabela de Cursos -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Curso</th>
+                        <th>Descrição</th>
+                        <th>Duração</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Programação Web</td>
+                        <td>Aprenda a criar e desenvolver websites modernos e responsivos.</td>
+                        <td>12 semanas</td>
+                        <td>R$ 1.200,00</td>
+                    </tr>
+                    <tr>
+                        <td>Inteligência Artificial</td>
+                        <td>Explore conceitos e técnicas de IA para resolver problemas complexos.</td>
+                        <td>10 semanas</td>
+                        <td>R$ 1.500,00</td>
+                    </tr>
+                    <tr>
+                        <td>Desenvolvimento de Apps</td>
+                        <td>Crie aplicações móveis para Android e iOS com as melhores práticas.</td>
+                        <td>14 semanas</td>
+                        <td>R$ 1.800,00</td>
+                    </tr>
+                    <tr>
+                        <td>Design Gráfico</td>
+                        <td>Aprenda técnicas de design para criar materiais visuais atraentes.</td>
+                        <td>8 semanas</td>
+                        <td>R$ 1.000,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações.</p>
+
+            <div class="container">
+                <form action="#" method="post">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <h6>&copy; 2024 Instituição de Ensino. Todos os direitos reservados.</h6>
+    </footer>
+</body>
+
+</html>
