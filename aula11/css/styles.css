@@ -1,0 +1,279 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo geral do body */
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #005aab;
+    color: #fff;
+    padding: 1rem;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    background: url('banner.jpg') no-repeat center center/cover;
+    padding: 5rem 1rem;
+}
+
+.banner-text {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease-out;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    margin-top: 0;
+    animation: fadeIn 2s ease-out 0.5s;
+}
+
+/* Animação de fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Seções principais */
+main {
+    padding: 2rem;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.intro img {
+    max-width: 50%;
+    border-radius: 8px;
+    margin-right: 1rem;
+    animation: slideInLeft 1s ease-out;
+}
+
+.intro .text {
+    max-width: 50%;
+}
+
+.intro .text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-out;
+}
+
+.intro .text p {
+    font-size: 1.2rem;
+}
+
+/* Animação de slideInLeft */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Especialidades */
+#especialidades {
+    background: #e2e2e2;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+#especialidades h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+#especialidades ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#especialidades ul li {
+    background: #005aab;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    text-align: center;
+    animation: scaleUp 0.5s ease-out;
+}
+
+/* Animação de scaleUp */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Galeria de Fotos */
+#galeria {
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Formulário de Contato */
+#formulario-contato {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#formulario-contato h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+form button {
+    background: #005aab;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #004a8f;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .intro img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+}
